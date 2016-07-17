@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>wsa3kol_front</name>
+	<creationDate>6-04-2016</creationDate>
+	<author>A.H.C. Waasdorp</author>
+	<authorEmail>bram@waasdorpsoekhan.nl</authorEmail>
+	<authorUrl>http://www.waasdorpsoekhan.nl</authorUrl>
+	<copyright>Copyright (C) 2014 - 2019 A.H.C. Waasdorp. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Three columns template developed for homepage website Asha-s.com and Soekhan.nl</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>favicon_as.ico</filename>
+		<filename>favicon_ws.ico</filename>
+		<filename>gatracker.php</filename>
+		<filename>include_link_rel_canonical.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>style.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/index.html</filename>
+		<filename>images/mw_menu_separator.png</filename>
+		<filename>images/top_bg.png</filename>
+		<filename>images/transparent_b1.png</filename>
+		<filename>images/wsa_b1024_zonsondergang.jpg</filename>
+		<filename>images/wsa_logo.bmp</filename>
+		<filename>images/editButton.png</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/printButton.png</filename>
+	</files>
+	<positions>
+		<position>logo</position>
+ 		<position>icons</position>
+        	<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>topright</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+		<position>header</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="explanation1"  type="spacer" hr="false"
+					label="With these variables you can change the lay-out of the template a little bit. &lt;br /&gt;
+Widthes are % relative to body, body is measured in % or px. General:"
+					 />
+				<field name="gplusProfile" type="text" default="" 
+					label="G+Profile" 
+					description="Google+ profile"
+					/>
+				<field name="bodyWidth"   type="text" default="100%"
+					label="Width body:"
+					description="Width body % or px, other widths are percentages relative to body width. (Add % or px to the value)"
+					 />
+				<field name="bodyWidthMin"   class="validate-numeric" type="text" default=""
+					label="Minimum width body:"
+					description="Minimum width body in pixels"
+					 />
+				<field name="breakpointMobile"   class="validate-numeric" type="text" default="641"
+					label="Breakpoint Mobile:"
+					description="Breakpoint body width seen as mobile"
+					 />
+				<field name="bgImage" type="media" default="/templates/wsa3kol_front/images/wsa_b1024_zonsondergang.jpg" 
+                                       	label="Background image:" description="Select a background image." />
+				<field name="bgWidth"   class="validate-numeric" type="text" default="80.0"
+					label="Width background image:"
+					description="Width background image, 100 = full screen"
+					 />
+				<field name="bgTop"  class="validate-numeric" type="text" default=""
+					label="Margin top background image:"
+					description="Background image margin top"
+					 />	
+				<field name="bgLeft"  class="validate-numeric" type="text" default="10.0"
+					label="Margin left background image:"
+					description="Background image margin left"
+					 />					 
+					 
+				<field name="bgColor"  type="text" default="#808080"
+					label="Background color:"
+					description="Background color #RGB, #000000 = black, #FF0000 = red, #00FF00 = green, #0000FF = blue, #FFFFFF = white, default #080810  "
+					 />
+				<field name="fgColor"  type="text" default=""
+					label="Foreground color:"
+					description="If not empty overwrite color of most texts .  #RGB, #000000 = black, #FF0000 = red, #00FF00 = green, #0000FF = blue, #FFFFFF = white, default empty"
+					 />
+				
+				<field name="heightHeader"   class="validate-numeric" type="text" default="15"
+					label="Height of header:"
+					description="Height of header above left and main column"
+					 />
+				<field name="headerWidth"   class="validate-numeric" type="text" default="0"
+					label="Width header:"
+					description="Width header block"
+					 />
+				<field name="headerPosTop"   class="validate-numeric" type="text" default="0"
+					label="Top margin header:"
+					description="Position top header block, 0 = top, 100 = (under) bottom"
+					 />
+				<field name="headerPosLeft"   class="validate-numeric" type="text" default="1.0"
+					label="Left margin header:"
+					description="Position left margin header block 0 = left edge, 100 = right edge"
+					 />
+				<field name="iconsWidth"  class="validate-numeric" type="text" default="0"
+					label="Width icons fb etc:"
+					description="Width icons fb etc. as percentage of width page"
+					 />
+				<field name="iconsPosLeft"  class="validate-numeric" type="text" default="0"
+					label="Left margin icons:"
+					description="Position left margin icons as percentage of width 0 = left edge, 100 = right edge"
+					 />
+				<field name="iconsPosTop"  class="validate-numeric" type="text" default="0"
+					label="Top margin icons:"
+					description="Position top icons as percentage of height, 0 = top, 100 = (under) bottom"
+					 />
+				<field name="logo" type="media" default="/templates/wsa3kol_front/images/wsa_logo.bmp" 
+					label="Logo image:" description="Select a logo image." />
+				<field name="logoWidth"   class="validate-numeric" type="text" default="15.0"
+					label="Width logo:"
+					description="Width logo"
+					 />
+				<field name="logoPosTop"   class="validate-numeric" type="text" default="0"
+					label="Top margin logo:"
+					description="Position top logo, 0 = top, 100 = (under) bottom"
+					 />
+				<field name="logoPosLeft"   class="validate-numeric" type="text" default="1.0"
+					label="Left margin logo:"
+					description="Position left margin logo 0 = left edge, 100 = right edge"
+					 />
+				<field name="areaPosTop"   class="validate-numeric" type="text" default="10"
+					label="Top position content"
+					description="Top position main content"
+					 />
+				<field name="leftColumnWidth"   class="validate-numeric" type="text" default="18.0"
+					label="Width left column menu, fb etc:"
+					description="Width left column menu icons fb etc."
+					 />
+				<field name="leftColumnPosLeft"  class="validate-numeric" type="text" default="1.0"
+					label="Left margin left column:"
+					description="Position left margin left column 0 = left edge, 100 = right edge"
+					 />
+				<field name="mainColumnWidth"   class="validate-numeric" type="text" default="90"
+					label="Width mainColumn:"
+					description="Width mainColumn"
+					 />
+				<field name="mainColumnPosLeft"   class="validate-numeric" type="text" default="10"
+					label="Left margin mainColumn:"
+					description="Position left margin 0 = left edge, 100 = right edge"
+					 />
+				<field name="rightColumnWidth"   class="validate-numeric" type="text" default="0"
+					label="Width right column :"
+					description="Width right column."
+					 />
+				<field name="rightColumnPosLeft"  class="validate-numeric" type="text" default="0"
+					label="Left margin right column:"
+					description="Position left margin right column 0 = left edge, 100 = right edge"
+					 />
+				<field name="footerWidth"   class="validate-numeric" type="text" default="80.0"
+					label="Width footers:"
+					description="Width footer as percentage of pagewidth"
+					 />
+				<field name="footerPosLeft"   type="text" default="5.0"
+					label="Left margin footer:"
+					description="Position left margin 0 = left edge, 100 = right edge"
+					 />
+				<field name="footerPosBottom"   class="validate-numeric" type="text" default="0.0"
+					label="Bottom margin footer:"
+					description="Position bottom footer, 0 = bottom"
+					 />
+
+				<field name="explanation2"  type="spacer" hr="false"
+					label="Color links and menuoptions #RGB or colorname. #RGB: #000000 = black, #FF0000 = red, #00FF00 = lime, #0000FF = blue, #FFFFFF = white.&lt;br /&gt;Names: yellow, fuchsia, red, aqua, lime, blue, olive, purple, maroon, teal, green, navy, white, black, gray, silver."
+					 />
+				<field name="linkColor"  type="text" default=""
+					label="Link color:"
+					description="If not empty overwrite color of links . Default empty  "
+					 />
+				<field name="linkDecoration" type="list" default=""
+					label="Underline link"	
+ 				    description="Underline link."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+				<field name="linkHvColor"  type="text" default=""
+					label="Link hover color:"
+					description="If not empty overwrite color of link where mouse hovers above . Default empty  "
+					 />
+				<field name="menuColor"  type="text" default=""
+					label="Menutext color:"
+					description="If not empty overwrite color of menu text . Default empty  "
+					 />
+				<field name="menuFontSize"   type="text" default=""
+					label="Menu text size:"
+					description="Menu text font size (pixels)."
+					 />
+				<field name="menuDisplay" type="list" default=""
+					label="Horizontal menu"	
+ 				    description="Underline menu text."
+				>
+					<option value="">Default</option>
+					<option value="inline">Horizontal</option>
+					<option value="inline-block center">Horizontal centered</option>
+					<option value="inline-block left">Horizontal left</option>
+					<option value="inline-block right">Horizontal right</option>
+					<option value="block">Vertical (down)</option>
+				</field>
+					 
+				<field name="menuLineHeight"   class="validate-numeric" type="text" default=""
+					label="Line height"
+					description="Line height menu lines"
+					 />
+
+				<field name="menuItemWidth"   class="validate-numeric" type="text" default="0"
+					label="Width menuitem:"
+					description="Width menuitem as percentage of menuwidth, special for horizontal imagemenu, (0 not set)  "
+					/>
+				<field name="menuItemLeftMargin"   class="validate-numeric" type="text" default=""
+					label="Margin menuitem:"
+					description="Left margin menuitem as percentage of menuwidth, special for horizontal imagemenu, (empty not set)  "
+					/>
+				<field name="menuDecoration" type="list" default=""
+					label="Underline menu text"	
+ 				    description="Underline menu text."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+				<field name="menuHvColor"  type="text" default=""
+					label="Menu hover color:"
+					description="If not empty overwrite color of menu text where mouse hovers above . Default empty  "
+					 />
+				<field name="menuHvDecoration" type="list" default=""
+					label="Underline hovered menu text"	
+ 				    description="Underline menu text where mouse hovers above."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+				<field name="menuActiveColor"  type="text" default=""
+					label="Active menu color:"
+					description="If not empty overwrite text color of active menu. Default empty  "
+					 />
+				<field name="menuActiveDecoration" type="list" default=""
+					label="Underline active menu item"	
+ 				    description="Underline the active menu item."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+    <updateservers>
+	<server type="extension" priority="1" name="WSA three columns Template"><![CDATA[http://www.waasdorpsoekhan.nl/update/wsa3kolfront/wsa3kolfront.xml]]></server>
+<server type="collection" priority="2" name="WaasdorpSoekhan extensions"><![CDATA[http://www.waasdorpsoekhan.nl/update/waasdorpsoekhan_list.xml]]></server>
+	</updateservers>
+
+</extension>
