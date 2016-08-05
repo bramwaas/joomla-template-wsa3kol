@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="2.5" type="template" client="site">
+<extension version="2.5" type="template" client="site" method="upgrade">
 	<name>wsa3kol_front</name>
 	<creationDate>04-08-2016</creationDate>
 	<author>A.H.C. Waasdorp</author>
